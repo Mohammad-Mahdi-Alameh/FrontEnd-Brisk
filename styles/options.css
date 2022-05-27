@@ -136,4 +136,88 @@ img {
   
   .dropdown:hover .dropbtn {background-color: #3e8e83;}
 
-  
+  /* Homepage styles */
+  .row{
+    width: 85%;
+    text-align: center;
+    height: 100px;
+    margin: 150px;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+  }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+      text-align: center;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  /* Market */
+
+.market-ready {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.market-ready-image {
+  width: 50%;
+}
+
+.market-ready-image > img {
+  width: 100%;
+}
+
+.market-ready-content {
+  width: 50%;
+}
+
+.market-ready-content > h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.market-ready-content > p {
+  font-size: 26px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.market-ready-content a {
+  color: #0d0;
+}
+
+.rp-network {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.rp-network > h1 {
+  font-size: 32px;
+}
+
+.rp-network > p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.rp-images {
+  width: 100%;
+}
+
+.rp-images > img {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.rp-images > img:last-child {
+  width: 60%;
+}
