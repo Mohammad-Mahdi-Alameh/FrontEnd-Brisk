@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  margin-top: 20px;
+}
+
+
+/* NavBar */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  
+}
+.btn {
+  padding: 14px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.container {
+  padding: 0 6vw;
+  width: 100%;
+}
+
+.btn-green {
+  background-color: #04AA6D;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+}
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.links > li {
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.links > li:first-child {
+  text-decoration: underline;
+}
+
+.links > li:last-child {
+  margin-left: 0;
+}/* Hero */
+
+.hero {
+  background-image: url("../assets/salmon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content {
+  padding: 40vh 0 10vh 0;
+  width: 50%;
+  
+}
+
+.hero-heading {
+  font-size: 64px;
+  margin-bottom: 40px;
+  
+}
+
+.hero-paragraph {
+  font-size: 32px;
+  margin-bottom: 30px;
+  
+}
