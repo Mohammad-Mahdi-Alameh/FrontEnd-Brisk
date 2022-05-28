@@ -43,8 +43,11 @@ footer {
 .col-form {
 
     flex: 0 0 40%;
+}
 
-
+.col-form >.form-container>p{
+    float: left;
+    padding: 5px;
 }
 
 .col-logo img {
