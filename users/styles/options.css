@@ -16,10 +16,18 @@
 
   h1, p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+
+
+  h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   }
   .para-header{
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 5vw;
+
   }
 
   /* NavBar */
@@ -101,19 +109,70 @@
     
   }
   
+
+.threeDiv{
+  font-size:1.5vw;
+}
+
   /*Middle Container*/
   .middle-container{
-    height: 150px;
-    width: 70%;
-    max-width: 1300px;
+    height: 100px;
+    width: 100%;
+    max-width: 1152px;
     background-color: #B1E5D5;
-    margin-top: 40px;margin-bottom: 40px;
-    margin-left: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: auto;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 16%);
+  }
+
+  .qr-image{
+    height: 80px;
+    width: 267px;
+  }
+
+  .qr{
+    width: 410px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .scanning{
+    font-size: 1.5vw;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  .immediate{
+    font-size: 1vw;
+    line-height: 22px;
+    font-weight: normal;
   }
   
+  .right-image{
+    float: right;
+    width: 100px;
+    margin-left: 40px;
+    border-radius: 8px;
+    height: 100px; 
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
   .dropbtn {
       background-color: #04AA6D;
       color: white;
@@ -257,7 +316,7 @@
     margin-left: 50px;
     margin-bottom: 40px;
     height: 450px;
-    width: 500px;
+    width: 450px;
     display: flex;
   }
 
@@ -408,6 +467,17 @@
   #ftrEmailForm #ftrEmailInput:focus {
     border: 1px solid #ef9223;
     outline: #ef9223 auto 5px;
+  }
+
+  .lebanon{
+    height:50vh;
+    width:40vw;
+    margin-bottom: 20px;
+  }
+
+  .platforms{
+    cursor: pointer;
+    height: 8vh;
   }
   
   #ftrEmailForm .button {
@@ -570,7 +640,8 @@
       }
     
       .market-ready-image {
-        width: 100%;
+        width: 80%;
+        text-align: center;
       }
       .Hamburger{
         flex-direction: column;
@@ -578,5 +649,10 @@
       .middle-container{
         font-size: 10px;
       }
+      .Hamburger-2{
+        width:80%;
+        margin-right: 10px;
+      }
+      
       
   }
