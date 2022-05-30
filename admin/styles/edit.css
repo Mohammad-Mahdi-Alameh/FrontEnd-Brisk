@@ -6,12 +6,19 @@
     margin: auto;
     text-align: center;
     font-family: arial;
+    background-color:#81d9b9 ;
   }
   
   .title {
     color: grey;
     font-size: 18px;
   }
+
+  h2{
+    text-align:center; 
+    color:#7ed5b6;
+  }
+
   
   button {
     border: none;
@@ -63,4 +70,8 @@
     opacity: 1;
   }
 
+
+  .image{
+    width:100%; height: 50%;
+  }
  
