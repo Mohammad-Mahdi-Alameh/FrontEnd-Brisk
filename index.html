@@ -17,10 +17,8 @@
           <ul class="links">
             <li id="edit"><a href="./users/pages/edit-profile.html">Edit Profile</a></li>
             <li id="signup"><a href="./users/pages/act-signup.html">Sign Up</a></li>
-            <button class="btn btn-green" >Log in</button>
-            <li>Edit Profile</li>
-            <li>Sign Up</li>
-            <button class="btn btn-green"  id="login">Log in</button>
+            <button class="btn btn-green" id="login">Log in</button>
+           
 
           </ul>
         </nav>
@@ -28,7 +26,7 @@
         <!-- Start Hero Content -->
         <section class="hero-content">
           <h1 class="hero-heading">
-            <span class="bold">Birsk is your simplest</span> app to order
+            <span class="bold">Brisk is your simplest</span> app to order
           </h1>
           <p class="hero-paragraph">
             Discover all the locations where the Brisk is available.
@@ -53,19 +51,19 @@
       <!-- End Hero -->
 
         <!-- Start three images Section -->
-        <div class="row">
+        <div class="row mobile">
             <div class="column">
               <img src="users/assets/deliver.jpg" alt="Snow" style="width:100%">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Upon ordering, expect the food <br>to arrive within minutes</h2>
+              <p class="threeDiv">Upon ordering, expect the food <br>to arrive within minutes</p>
             </div>
             <div class="column">
               <img src="users/assets/tele.png" alt="Forest" style="width:100%">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Become a member on your phone</h2>
+              <p class="threeDiv">Become a member on your phone</p>
 
             </div>
             <div class="column">
               <img src="users/assets/taco.png" alt="Mountains" style="width:100%">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Order a variety of foods</h2>
+              <p class="threeDiv">Order a variety of foods</p>
             </div>
           </div>
         
@@ -73,12 +71,17 @@
       <!-- End three images Section -->
         <!--Get the app-->
         <div class="middle-container">
-            <img src="users/assets/mobile.jpg" style="height: 100px;">
-            <div style="justify-content: center; font-family: cursive;">
-                <h2>Scan the QR Code</h2>
+            <img src="users/assets/mobile.jpg"  class="qr-image">
+            <div class="qr">
+              <div class="scanning">
+                <p >Scan the QR Code</p>
+              </div>
+              <div class="immediate">
                 <p>The QR code will allow you to access <br> the app immediatly bu scanning</p>
+
+              </div>
             </div>
-            <img src = "users/assets/qr.jpg"  style="height: 150px; padding: 20px;">
+            <img src = "users/assets/qr.jpg"  class="right-image">
   
   
         </div>
@@ -99,7 +102,7 @@
               In brisk, not only we have junky food, but you could go healthy. People who aim for diet will encounter several options to proceed with their diet.
 
             </p>
-            <button class="btn btn-green">Check our Restaurants</button>
+            <h2><a href="./users/pages/check.html">Check our Restaurants</a></h2>
    
           </div>
         </div>
@@ -112,12 +115,12 @@
       <!--Rate Restaurants-->
       <section class="Hamburger" style="margin-top: 20px; background-color: #abead3;">
         <div class="market-ready-content">
-            <p class="para-header" >Whilst enjoying your food,<span class="bold"> it will be a favor if you spend some time rating our restaurants</span></p>
-            <p >
+            <p class="para-header" >Whilst enjoying your food,<span class="bold"> it will be a favor if you spend some time rating our restaurants in the check restaurants section.</span></p>
+            <p>
               This will help the application to contact the restaurants and update them with their status.
               Also, this might assist the restaurants to evolve and always meet their customers needs.
             </p>
-            <button class="btn btn-green">Rate Restaurants</button>
+            
         </div>
           <div class="Hamburger-2 mobile">
               <img src="./users/assets/hamburger.jpg" alt="">
@@ -126,15 +129,15 @@
 
 
       <!--Location-->
-      <section class="market container" style="margin-top: 20px; margin-bottom: 40px;">
+      <section class="market container" >
         <div class="market-ready mobile">
             <div class="market-ready-image">
-              <img src="./users/assets/leb.jpg" alt=""  style="height:70vh ;width:30vw">
+              <img src="./users/assets/leb.jpg" alt="" class="lebanon" >
             </div>
         <div class="market-ready-content">
-            <h1 >You can download Brisk on the following platforms:</h1>
-            <img src="users/assets/app.png" style="cursor: pointer;">
-            <img src="users/assets/google-play.png" style="cursor:pointer ; margin-left: 20px;">
+            <p class="para-header">You can download Brisk on the following platforms:</p>
+            <img src="users/assets/app.png"  class="platforms">
+            <img src="users/assets/google-play.png" class="platforms">
           </div>
           
     </section>
