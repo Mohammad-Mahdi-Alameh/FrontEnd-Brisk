@@ -6,11 +6,16 @@
     margin: auto;
     text-align: center;
     font-family: arial;
+    background-color:#81d9b9 ;
   }
   
   .title {
     color: grey;
     font-size: 18px;
+  }
+  h2{
+    text-align:center;
+     color:#04AA6D;
   }
   
   button {
@@ -32,6 +37,11 @@
   }
   input:hover{
       border-color: #04AA6D;
+  }
+
+  .image{
+    width:100%;
+     height: 50%;
   }
 
   a {
