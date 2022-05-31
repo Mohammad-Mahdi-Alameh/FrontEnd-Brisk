@@ -1,5 +1,7 @@
-// document.getElementById('login').addEventListener("click",login);
-// function login() {
-//     location.replace("file:///C:/Users/mmwal/Desktop/SE/Assignments/MohammadMahdiAlameh_Assignment%209/FrontEnd/FrontEnd-Brisk/users/pages/login.html");
-    
-// }
+let view_restaurants=document.getElementById('view_restaurants');
+
+view_restaurants.addEventListener("click", function(event){
+
+    event.preventDefault();
+
+    window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/users/pages/view-restaurants.html";});
