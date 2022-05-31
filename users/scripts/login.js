@@ -45,15 +45,19 @@ login.addEventListener("click", function(event){
     
             let is_admin= result.is_admin;
             
-            if(is_admin === "0" )
+            if(is_admin === 0 )
 
-             window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/";
+            window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/";
      
-         else
+            else
                    
-              window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/admin";
+            window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/admin";
         
         }
+        
+        else
+
+            alert("Wrong Username or Password ! ");
 
     });
 
