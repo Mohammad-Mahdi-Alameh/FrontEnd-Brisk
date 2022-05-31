@@ -75,6 +75,35 @@ button.addEventListener("click", function(event){
         let message = result.success;
    
         if(message === true){
+            
+            let user_id = result.user_id;
+
+            setCookie("user_id",user_id,1);
+   
+            document.getElementById("first_name").value = "";
+   
+            document.getElementById("last_name").value = "";
+   
+            document.getElementById("username").value = "";
+   
+            document.getElementById("password").value = "";
+   
+            document.getElementById("day").value = "";
+   
+            document.getElementById("month").value = "";
+   
+            document.getElementById("year").value = "";
+   
+            document.getElementById("country").value = "";
+   
+            document.getElementById("city").value = "";
+   
+            document.getElementById("phone").value = "";
+   
+            for (const radioButton of radioButtons) {
+   
+                radioButton.checked=false;
+            }
 
             window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk";   
 
