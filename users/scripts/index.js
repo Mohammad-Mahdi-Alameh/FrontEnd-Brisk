@@ -11,7 +11,17 @@ function checkIfLoggedIn() {
 
         signup.style.visibility="hidden";
 
-        login.innerText="SignOut";
+        login.innerText="LogOut";
+
+        login.addEventListener("click",function (event) {
+
+            event.preventDefault();
+
+            eraseCookie("user_id");
+
+            location.reload();
+            
+        });
     }}
 
 
@@ -37,4 +47,10 @@ view_restaurants.addEventListener("click", function(event){
             if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
         }
         return null;
+      }
+
+      function eraseCookie(name) {   
+
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      
       }

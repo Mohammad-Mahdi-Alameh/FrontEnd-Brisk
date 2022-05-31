@@ -32,10 +32,10 @@ function viewRestaurants() {
         var string="";
 
         result.forEach(element=>{
-                string += '<ul>'+ '<li>' + element.trade_name + '</li>' + '<li>' +
+                string += '<div id="flex-item"><ul>'+ '<li>' + element.trade_name + '</li>' + '<li>' +
                     element.working_hours + '</li>' +'<li>' + element.dining_room_capacity + '</li>'+'<li>' + element.phone + '</li>' +'<li>' + element.drivethrough_availabilty
                     + '</li>' +'<li>' + element.delivery_availabilty + '</li>' +
-                    '<li>' + element.reservation_availabilty + '</li>' +'<li>' + element.address + '</li>' +'<li>' + element.support_all_diets+ '</li>'+'</ul>'
+                    '<li>' + element.reservation_availabilty + '</li>' +'<li>' + element.address + '</li>' +'<li>' + element.support_all_diets+ '</li>'+'</ul></div>'
     });
 
 flex_item.innerHTML=string; 
