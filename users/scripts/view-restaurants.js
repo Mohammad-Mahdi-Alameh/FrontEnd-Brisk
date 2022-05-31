@@ -2,11 +2,11 @@
 window.onload=viewRestaurants;
 ////
 
-let flex_item=document.getElementById("flex-item");
+let flex_container=document.getElementById("flex-container");
 
 function viewRestaurants() {
     
-    if(getCookie("user_id")==null){
+    if(getCookie("user_id")==null && getCookie("is_admin")==0){
 
         window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/users/pages/login.html";
 
@@ -38,7 +38,7 @@ function viewRestaurants() {
                     '<li>' + element.reservation_availabilty + '</li>' +'<li>' + element.address + '</li>' +'<li>' + element.support_all_diets+ '</li>'+'</ul></div>'
     });
 
-flex_item.innerHTML=string; 
+flex_container.innerHTML=string; 
 
 
 });
