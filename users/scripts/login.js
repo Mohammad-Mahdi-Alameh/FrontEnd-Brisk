@@ -32,8 +32,22 @@ login.addEventListener("click", function(event){
         let result = response.data;
    
         let message = result.succeed;
+
+        let is_admin= result.is_admin;
    
-        console.log(message);
+        if(message === "User logged in successfuly"){
+            
+            if(is_admin === "0" )
+
+             window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/";
+     
+         else
+                   
+              window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/admin";
+        
+          
+            
+        }
 
 
 
