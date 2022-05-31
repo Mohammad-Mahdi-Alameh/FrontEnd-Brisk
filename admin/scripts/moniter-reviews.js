@@ -1,5 +1,5 @@
 ///
-window.onload=displayReviewss;
+window.onload=displayReviews;
 ////
 
 function displayReviews() {

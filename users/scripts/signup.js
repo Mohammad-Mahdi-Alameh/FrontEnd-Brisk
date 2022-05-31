@@ -78,8 +78,12 @@ button.addEventListener("click", function(event){
             
             let user_id = result.user_id;
 
+            let is_admin = result.is_admin;
+
             setCookie("user_id",user_id,1);
-   
+            
+            setCookie("is_admin",is_admin,1);
+
             document.getElementById("first_name").value = "";
    
             document.getElementById("last_name").value = "";

@@ -44,6 +44,8 @@ login.addEventListener("click", function(event){
             document.getElementById("password").value = "";
     
             let is_admin= result.is_admin;
+
+            setCookie("is_admin",is_admin,1);
             
             if(is_admin === 0 )
 
