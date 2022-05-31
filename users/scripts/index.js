@@ -19,6 +19,8 @@ function checkIfLoggedIn() {
 
             eraseCookie("user_id");
 
+            eraseCookie("is_admin");
+
             location.reload();
             
         });

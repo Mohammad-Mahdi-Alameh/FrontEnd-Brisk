@@ -633,6 +633,10 @@
   @media only screen and (max-width: 1000px) {
       .mobile {
         flex-direction: column;
+        
+      }
+      .row{
+        visibility: hidden;
       }
       .program-images > div {
         width: 100%;

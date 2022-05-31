@@ -58,6 +58,3 @@ function getCookie(name) {
   }
 
       
-
-
-
