@@ -32,10 +32,18 @@ login.addEventListener("click", function(event){
         let result = response.data;
    
         let message = result.succeed;
-
-        let is_admin= result.is_admin;
    
         if(message === "User logged in successfuly"){
+
+            let user_id= result.user_id;
+
+            setCookie("user_id",user_id,1);
+
+            document.getElementById("username").value = "";
+   
+            document.getElementById("password").value = "";
+    
+            let is_admin= result.is_admin;
             
             if(is_admin === "0" )
 
@@ -45,10 +53,20 @@ login.addEventListener("click", function(event){
                    
               window.location.href = "http://localhost/myphpprojects/FrontEnd-Brisk/admin";
         
-          
-            
         }
 
+    });
 
+});
 
-});});
+function setCookie(cname,cvalue,exdays) {
+    
+    const d = new Date();
+    
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    
+    let expires = "expires=" + d.toUTCString();
+    
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    
+  }
